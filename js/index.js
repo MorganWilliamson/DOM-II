@@ -14,5 +14,14 @@
    
 * [ ] Nest two similar events somewhere in the site and prevent the event propagation properly. Remember not all event types bubble.
 * [ ] Stop the navigation items from refreshing the page by using `preventDefault()`
+
+Some of the Available Classes in HTML: 
+*"main-navigation" - targets <header>
+*"logo-heading" - targets the h1
+*"nav" - targets the nav
+*"nav-link" - targets links in the nav
+*"intro" - contains bus image and "Welcome to Fun Bus!" heading/paragraph
+
 */
 
+const links = document.querySelector('.nav');
