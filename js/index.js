@@ -17,7 +17,7 @@ Some of the Available Classes in HTML:
 *"nav-link" - targets links in the nav
 *"intro" - contains bus image and "Welcome to Fun Bus!" heading/paragraph
 
-different event listeners added: 7 / 10
+different event listeners added: 9 / 10
 
 */
 
@@ -65,4 +65,18 @@ document.addEventListener('keydown', (event) => {
 })
 
 //////// 
+
+const bus = document.querySelector('.intro img')
+
+bus.addEventListener('click', (event) => {
+    bus.style.border = '5px solid black'
+}); 
+
+////////
+
+document.addEventListener('wheel', (event) => {
+    event.target.style.border = '4px solid blue'
+});
+
+////////
 
