@@ -1,9 +1,6 @@
 /* Recommended options: 
-* `mouseover`
 * `keydown`
 * `wheel`
-* `load`
-* `focus`
 * `resize`
 * `scroll`
 * `select`
@@ -22,7 +19,17 @@ Some of the Available Classes in HTML:
 *"nav-link" - targets links in the nav
 *"intro" - contains bus image and "Welcome to Fun Bus!" heading/paragraph
 
+different event listeners added: 5 / 10
+
 */
+
+/////////
+
+window.addEventListener('load', (event) => {
+    console.log('page is fully loaded');
+});
+
+////////
 
 const h1 = document.querySelector('.logo-heading');
 
@@ -34,9 +41,17 @@ h1.addEventListener('mouseout', (event) => {
     h1.style.color = 'black';
 });
 
+////////
 
+const password = document.querySelector('input[type="password"]')
 
+password.addEventListener('focus', (event) => {
+    event.target.style.background = '#e35f4b';
+});
 
-const links = document.querySelector('.nav-link');
+password.addEventListener('blur', (event) => {
+    event.target.style.background = '';
+});
 
+/////////
 
