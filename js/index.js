@@ -1,10 +1,8 @@
 /* Recommended options: 
-* `keydown`
 * `wheel`
 * `resize`
 * `scroll`
 * `select`
-* `dblclick`
 * `drag / drop`
 
 * Note: Drag and drop is a bit more advanced than the others: it's not actually a single type of event but several types that need to work together.
@@ -19,7 +17,7 @@ Some of the Available Classes in HTML:
 *"nav-link" - targets links in the nav
 *"intro" - contains bus image and "Welcome to Fun Bus!" heading/paragraph
 
-different event listeners added: 5 / 10
+different event listeners added: 7 / 10
 
 */
 
@@ -54,4 +52,17 @@ password.addEventListener('blur', (event) => {
 });
 
 /////////
+
+const nav = document.querySelector('.nav')
+
+nav.addEventListener('dblclick', function (event) {
+    nav.style.border = "3px dashed black";
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key = 65)
+    nav.style.border = '3px solid green';
+})
+
+//////// 
 
