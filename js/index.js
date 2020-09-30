@@ -1,7 +1,6 @@
 /* Recommended options: 
 * `wheel`
 * `resize`
-* `scroll`
 * `select`
 * `drag / drop`
 
@@ -80,3 +79,6 @@ document.addEventListener('wheel', (event) => {
 
 ////////
 
+document.addEventListener('select', (event) => {
+    event.target.style.border = '4px solid red'
+});
