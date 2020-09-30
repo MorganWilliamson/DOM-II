@@ -24,4 +24,19 @@ Some of the Available Classes in HTML:
 
 */
 
-const links = document.querySelector('.nav');
+const h1 = document.querySelector('.logo-heading');
+
+h1.addEventListener('mouseover', (event) => {
+    h1.style.color = '#f2d45c';
+});
+
+h1.addEventListener('mouseout', (event) => {
+    h1.style.color = 'black';
+});
+
+
+
+
+const links = document.querySelector('.nav-link');
+
+
